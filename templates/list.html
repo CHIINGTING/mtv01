@@ -14,7 +14,7 @@
             </tr>
             {% for p in products %}
                 <tr>
-                    <td>{{p.name}}</td>
+                    <td><a href="/listing/{{ p.sku }}">{{p.name}}</a></td>
                     <td>{{p.price}}</td>
                     <td>{{p.qty}}</td>
                 </tr>
@@ -28,7 +28,7 @@
             </tr>
             {% for p in outStock %}
                 <tr>
-                    <td>{{ p.name }}</td>
+                    <td><a href="/listing/{{ p.sku }}">{{ p.name }}</a></td>
                     <td>{{ p.price }}</td>
                     <td>{{ p.qty }}</td>
                 </tr>
